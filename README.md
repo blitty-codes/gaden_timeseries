@@ -11,6 +11,8 @@ Data has been manually gathered with a timelapse of 30s. There are missing readi
 - ydata_profiling
 - pandas
 - numpy
+- matplotlib
+- statsmodels
 
 Create the following folder tree for data:
 
