@@ -2,7 +2,7 @@
 
 Data has been manually gathered with a timelapse of 30s. There are missing readings of sensors and ground moisture sensor brokes after X time, so some preprocessing is needed.
 
-This project's goal is to achieve more sustainable and efficient agricultural practices by enhancing irrigation efficiency. For this, we seek to predict moisture conditions with Machine Learning techniques, in order to guarantee optimal watering schedules, adapted to the specific needs of each plant. This approach not only conserves water by preventing over-irrigation but also ensures that plants receive the right amount of moisture at the right time, promoting healthier growth and reducing resource waste. 
+This project's goal is to achieve more sustainable and efficient agricultural practices by enhancing irrigation efficiency. For this, we seek to predict moisture conditions with Machine Learning techniques, in order to guarantee optimal watering schedules, adapted to the specific needs of each plant. This approach not only conserves water by preventing over-irrigation but also ensures that plants receive the right amount of moisture at the right time, promoting healthier growth and reducing resource waste.
 
 We decided to gather our own data from plants. We contacted *[Colectivo Kybele](https://www.etsiaab.upm.es/Estudiantes/Futuros%20Alumnos/Asociaciones_ETSIAAB?fmt=detail&prefmt=articulo&id=e5e6a18f18f7e510VgnVCM10000009c7648a____)*, a student organization from UPM's ETSIAAB, who kindly allowed us to place sensors in their garden. We placed sensors both in an indoor home plant, and in one of Kybele's tomato plants, growing outdoors.
 We used several sensors to collect the data, which we connected to an ESP32, connected via WI-FI to the eudoroam network. The network bandwith was rather low from the garden, so we encountered missing values on the data we collected.
@@ -16,7 +16,6 @@ Each plant (tomato plant, lemon tree and avocado plant) was equipped with the fo
 * Two **DHT sensors** for humidity and temperature. One for the top of the tree and the other for the ground.
 * **Sunlight sensors** to gather the amount of sun on the top and bottom of the plant.
   * Bad decision because the bought sensors gave relative sunlight data.
-
 
 ## Lemon tree deployment
 
@@ -32,18 +31,17 @@ Each plant (tomato plant, lemon tree and avocado plant) was equipped with the fo
 ![Avocado plant](./imgs/avocado_plant_0.png)
 ![Avocado plant](./imgs/avocado_plant_1.png)
 
+## Requirements
 
-### Requirements
+* ydata_profiling
+* pandas
+* numpy
+* matplotlib
+* statsmodels
+* keras 2.12.0
+* sklearn
 
-- ydata_profiling
-- pandas
-- numpy
-- matplotlib
-- statsmodels
-- keras 2.12.0
-- sklearn
-
-# Folder structure is organized as follows:
+##  Folder structure is organized as follows
 
 ```txt
 ├── README.md
@@ -80,5 +78,5 @@ Each plant (tomato plant, lemon tree and avocado plant) was equipped with the fo
 
 ## Notebooks
 
-- `EDA.ipynb` generates a description on data.
-- `preprocessing.ipynb` generates a new csv to train the model.
+* `EDA.ipynb` generates a description on data.
+* `preprocessing.ipynb` generates a new csv to train the model.
