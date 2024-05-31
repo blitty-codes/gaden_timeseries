@@ -76,7 +76,12 @@ Each plant (tomato plant, lemon tree and avocado plant) was equipped with the fo
 └── time_series_gardeen_report.html
 ```
 
-## Notebooks
+## Code structure
 
-* `EDA.ipynb` generates a description on data.
-* `preprocessing.ipynb` generates a new csv to train the model.
+* `Notebooks`
+  * `EDA.ipynb` generates a description on data.
+  * `preprocessing.ipynb` generates a new csv to train the model.
+  * `models.ipynb` contains some initial baseline model tests.
+  * `ensemble.ipynb` contains the development of the final ensemble model.
+
+* `Embedded software` contains the code which operates the sensors and makes them post data.
